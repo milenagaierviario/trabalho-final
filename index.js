@@ -31,7 +31,9 @@ alert(procurar)
 }
 }
 
-let menu
+while (menuopcoes !== 4) {
+    menuopcoes = prompt("1. Cadastrar abrigo: \n 2. Listar abrigos: \n 3. Procurar abrigo por cidade: \n 4. Sair")
+    let menu
 switch (menuopcoes) {
     case '1': 
         cadastro()
@@ -43,6 +45,6 @@ switch (menuopcoes) {
        procura()
         break
     case '4':
-        Saiu
         break
+}
 }
